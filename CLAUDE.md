@@ -1,34 +1,41 @@
 # Agents
 
+## Wonen & Energie Hackathon
+
+Voor analyses over de **woningmarkt** en **energietransitie** laad je de `wonen-energie-hackathon` skill uit `.kilo/skills/wonen-energie-hackathon/`. Deze skill bevat:
+
+- Een curated **tabelregister** van ~15 vetted CBS-tabellen voor wonen en energie, met join-sleutels
+- **Join-recepten** voor veelgebruikte combinaties (energielabels × woningkenmerken, verbruik × kerncijfers, etc.)
+- **Analyse-recepten** voor journalistieke verhaallijnen (energielabel-achterstand, gasverbruiksdaling, zonnepanelen-adoptie, etc.)
+- CBS **codeconventies** specifiek voor wonen- en energiethema's
+
+Laad deze skill wanneer je:
+- Werkt met woning- of energiedata van CBS StatLine
+- Een onderzoeksvraag over wonen of energietransitie wilt uitwerken
+- Tabellen wilt joinen op gemeentecode, wijkcode of buurtcode
+- Verhaallijnen wilt vinden in de beschikbare datasets
+
 ## CBS StatLine Data
 
-When accessing or analyzing CBS (Statistics Netherlands) data, always use the `cbs-statline-skill` skill located in `.kilo/skills/cbs-statline-skill/`. This applies to any task involving:
+Voor de onderliggende CBS API-client gebruik je de `cbs-statline-skill` uit `.kilo/skills/cbs-statline-skill/`. Deze skill biedt:
 
-- Discovering or searching CBS StatLine tables
-- Downloading or querying CBS OData APIs
-- Working with Dutch housing, energy transition, or regional statistics
-- Joining CBS datasets across tables (e.g., housing × energy labels)
+- Een **CBS OData v4 client** (`cbs_client.py`) voor metadata-inspectie, data downloaden, paginering en code-naar-label resolutie
+- Kennis van alle CBS-conventies (Perioden-codes, RegioS-codes, datastatus)
+- Een algemeen **tabelregister** van ~35 vetted CBS-tabellen (breder dan wonen/energie)
 
-To activate the skill, load it with the skill tool before starting work. The skill provides:
+Sleutel CBS-conventies:
+- **Periodecodes**: `2023JJ00` = jaar, `2023KW01` = kwartaal, `2023MM06` = maand
+- **Regiocodes**: `GM####` = gemeente, `WK######` = wijk, `BU########` = buurt. Altijd `.strip()` toepassen.
+- **Datastatus**: `Definitief` (definitief), `Voorlopig` (`*`), `Nader voorlopig` (`**`)
+- Controleer altijd op **verouderde tabellen** vóór gebruik
 
-- A curated **table registry** of ~35 vetted CBS tables with join keys
-- A **CBS OData v4 client** (`cbs_client.py`) for metadata inspection, data download, pagination, and code-to-label resolution
-- **Analysis recipes** for common data journalism story angles
-- Knowledge of CBS conventions (Perioden codes, RegioS codes, data status)
+## Na het ophalen van CBS-data
 
-Key CBS conventions to remember:
-- **Period codes**: `2023JJ00` = year, `2023KW01` = quarter, `2023MM06` = month
-- **Region codes**: `GM####` = gemeente, `WK######` = wijk, `BU########` = buurt. Always `.strip()` trailing spaces.
-- **Data status**: `Definitief` (final), `Voorlopig` (provisional `*`), `Nader voorlopig` (revised provisional `**`)
-- Check for **deprecated tables** before use
+Gebruik de passende downstream skill:
 
-## After retrieving CBS data
-
-Once you have a DataFrame from CBS, use the appropriate downstream skill:
-
-| Task | Skill |
+| Taak | Skill |
 |------|-------|
-| Clean CSV/Excel files or fix Dutch data quirks | `data-cleaning-dutch` |
-| Find story leads, outliers, trends, rankings | `data-analysis-journalism` |
-| Create charts and publication-ready figures | `data-viz-journalism` |
-| Create choropleth maps by gemeente, wijk, or buurt | `dutch-choropleth-maps` |
+| CSV/Excel opschonen of Nederlandse datakwalen oplossen | `data-cleaning-dutch` |
+| Verhaallijnen vinden, uitschieters, trends, rankings | `data-analysis-journalism` |
+| Grafieken en publicatieklare figuren maken | `data-viz-journalism` |
+| Choropleth-kaarten per gemeente, wijk of buurt | `dutch-choropleth-maps` |

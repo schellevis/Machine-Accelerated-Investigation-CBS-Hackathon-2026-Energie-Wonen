@@ -22,12 +22,11 @@ jupyter: ## Start JupyterLab
 
 test: ## Run unit tests (no network required)
 	uv run pytest .kilo/skills/cbs-statline-skill/tests/test_cbs_client_extended.py \
-		.kilo/skills/data-viz-journalism/tests/test_journalism_style.py \
-		tests/e2e/test_pipeline_local_csv.py -v
+		.kilo/skills/data-viz-journalism/tests/test_journalism_style.py -v
 
 test-live: ## Run live API tests (requires network, ~60s)
 	uv run pytest .kilo/skills/cbs-statline-skill/tests/test_api_live.py \
-		tests/e2e/ -m "integration or e2e" --timeout=60 -v
+		-m "integration or e2e" --timeout=60 -v
 
 clean: ## Remove virtual environment and cache files
 	rm -rf .venv

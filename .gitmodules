@@ -13,3 +13,6 @@
 [submodule ".kilo/skills/dutch-choropleth-maps"]
 	path = .kilo/skills/dutch-choropleth-maps
 	url = https://github.com/linksmith/dutch-choropleth-maps.git
+[submodule ".kilo/skills/wonen-energie-hackathon"]
+	path = .kilo/skills/wonen-energie-hackathon
+	url = https://github.com/linksmith/wonen-energie-hackathon.git

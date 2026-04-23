@@ -22,3 +22,7 @@ __pycache__/
 
 # uv — commit uv.lock for reproducibility, ignore only the cache
 .uv/
+
+# Local Claude Code settings
+.claude/
+
