@@ -85,15 +85,21 @@ Alle woningdata is beschikbaar per gemeente, de meeste ook per wijk en buurt.
 
 ## 4. Beschikbare data — Energie & Energietransitie
 
+Energiedata gaat verder dan woningen — CBS dekt ook industrie, transport en de overheid.
+
 | Thema | Wat kun je ermee? |
 |-------|-------------------|
 | **Gasverbruik per woning** | Gemiddeld aardgasverbruik (m³/jaar, temperatuurgecorrigeerd) per buurt, wijk en gemeente — voor 2022, 2023 en 2024 afzonderlijk beschikbaar, plus tijdreeks vanaf 2010 |
 | **Elektriciteitsverbruik** | Gemiddeld verbruik (kWh/jaar) per woning, inclusief teruglevering van zonnepanelen |
 | **Verwarmingsinstallaties** | Aandeel woningen op aardgas, warmtepomp of stadsverwarming — per gemeente (trend 2017–2022) en per wijk (2022) |
 | **Zonnepanelen** | Geïnstalleerd vermogen (kWp) en aantal installaties per gemeente (2019–2025) en per wijk (2022) |
+| **Energiebalans Nederland** | Totaal aanbod, omzetting en verbruik per sector (industrie, transport, huishoudens) — nationale tijdreeks |
+| **Hernieuwbare energie** | Productie zonnestroom, wind, biomassa — ook uitgesplitst naar RES-regio en provincie |
 | **Energielabels (A t/m G)** | ⚠️ Niet via CBS — gebruik [Transitiedata.nl](https://transitiedata.nl) voor labeldata per buurt |
 
 > **Tip:** Gasverbruik en elektriciteitsverbruik zijn ook uitgesplitst naar woningtype (vrijstaand, appartement, etc.), zodat je appels met appels vergelijkt.
+
+> **Tip:** Naast StatLine publiceert CBS ook **maatwerk** (in opdracht van ministeries) met journalistieke waarde: energiearmoede, subsidiemonitors, energieafhankelijkheid per land. Startpunt: [Energietransitie | CBS](https://www.cbs.nl/nl-nl/economie/industrie-en-energie/energietransitie) en het [overzicht aanvullende statistische diensten](https://www.cbs.nl/nl-nl/onze-diensten/maatwerk-en-microdata/publicaties/industrie-en-energie/overzicht-aanvullende-statistische-diensten-energietransitie).
 
 ---
 
