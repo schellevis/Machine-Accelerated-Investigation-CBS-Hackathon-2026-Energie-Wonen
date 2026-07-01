@@ -38,7 +38,7 @@ CBS heeft statline, ASD (Aavnvullende statitische diensten), longreads, nieuwsbe
 
 [StatLine - Grote batterijen voor opslag van elektriciteit](https://opendata.cbs.nl/#/CBS/nl/dataset/85929NED/table?ts=1778055632997)
 
-[StatLine - Elektriciteit en warmte; productie en inzet naar energiedrager](https://opendata.cbs.nl/#/CBS/nl/dataset/80030ned/table?ts=1778055648622)
+[StatLine - Elektriciteit en warmte; productie en inzet naar energiedrager](https://opendata.cbs.nl/#/CBS/nl/dataset/80030ned/table?ts=1778055648622) (⚠️ discontinued per 19 juni 2026, data loopt t/m 2024; opgevolgd door [86266NED - Elektriciteit en warmte; productie, inzet en vermogen naar energiedrager](https://opendata.cbs.nl/#/CBS/nl/dataset/86266NED/table))
 
 **Lijst van onderwerpen:**
 
