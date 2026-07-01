@@ -16,3 +16,6 @@
 [submodule ".kilo/skills/wonen-energie-hackathon"]
 	path = .kilo/skills/wonen-energie-hackathon
 	url = https://github.com/linksmith/wonen-energie-hackathon.git
+[submodule ".kilo/skills/energietransitie-skill"]
+	path = .kilo/skills/energietransitie-skill
+	url = https://github.com/linksmith/energietransitie-skill.git

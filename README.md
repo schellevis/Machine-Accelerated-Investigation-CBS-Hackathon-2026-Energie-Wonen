@@ -13,6 +13,7 @@ Vijf AI-agent skills die samenwerken in een keten — van het ophalen van CBS-da
 | Skill | Wat het doet |
 |---|---|
 | `wonen-energie-hackathon` | Domeinkennis wonen & energie: curated tabelregister, join-recepten, analyse-ideeën |
+| `energietransitie-skill` | Macro- en sectorenergiedata los van woningen: energiebalansen, hernieuwbare energie, bedrijven, subsidies, energiearmoede |
 | `cbs-statline-skill` | CBS OData API-client, regio- en periodecodes ophalen, paginering |
 | `data-cleaning-dutch` | Nederlandse datakwalen oplossen (puntkomma-CSV, komma-decimalen, ontbrekende waarden) |
 | `data-analysis-journalism` | Verhaallijnen vinden — uitschieters, trends, rankings, correlaties |
@@ -122,8 +123,9 @@ Open Kilo Code en laad een skill voordat je begint. Klik op **Add Skill** en wij
 
 **Aanbevolen volgorde:**
 1. `wonen-energie-hackathon` — laad als eerste, voor domeinkennis en tabelregister
-2. `cbs-statline-skill` — voor de CBS API-client
-3. `data-analysis-journalism` / `data-viz-journalism` / `dutch-choropleth-maps` — naar behoefte
+2. `energietransitie-skill` — voor energievragen los van woningen (macro/sector)
+3. `cbs-statline-skill` — voor de CBS API-client
+4. `data-analysis-journalism` / `data-viz-journalism` / `dutch-choropleth-maps` — naar behoefte
 
 ## Presentatie
 

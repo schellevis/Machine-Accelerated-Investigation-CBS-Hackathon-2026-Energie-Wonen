@@ -15,6 +15,28 @@ Laad deze skill wanneer je:
 - Tabellen wilt joinen op gemeentecode, wijkcode of buurtcode
 - Verhaallijnen wilt vinden in de beschikbare datasets
 
+## Energietransitie (macro & sector)
+
+Voor energievragen die **niet** (uitsluitend) over woningen gaan —
+energiebalansen, hernieuwbare energie, energieverbruik van bedrijven,
+energie-afhankelijkheid van het buitenland, subsidies, energiearmoede,
+energieprijzen — laad de `energietransitie-skill` uit
+`.kilo/skills/energietransitie-skill/`. Deze skill bevat:
+
+- Een tabelregister van CBS-energiebalansen en sectortabellen (aardgas,
+  elektriciteit, hernieuwbare energie, bedrijven), inclusief een
+  gediscontinueerde tabel en zijn opvolger
+- Verwijzingen naar niet-StatLine CBS-bronnen (ASD, maatwerk-publicaties,
+  dashboards, dossiers, longreads, nieuwsberichten)
+- Analyse-recepten per onderzoeksvraag (hernieuwbare energie,
+  energie-import-afhankelijkheid, subsidies verduurzaming, datacenters,
+  energiebelastingschijven bedrijven, energiearmoede)
+
+Laad deze skill wanneer je:
+- Werkt met energiedata die los staat van woningen (industrie, bedrijven, overheid)
+- Een macro- of sector-energiebalans nodig hebt (aardgas, elektriciteit, warmte)
+- Een CBS-bron zoekt die niet in StatLine zit (ASD, maatwerk, dashboard, dossier)
+
 ## CBS StatLine Data
 
 Voor de onderliggende CBS API-client gebruik je de `cbs-statline-skill` uit `.kilo/skills/cbs-statline-skill/`. Deze skill biedt:
