@@ -21,12 +21,11 @@ jupyter: ## Start JupyterLab
 	uv run jupyter lab
 
 test: ## Run unit tests (no network required)
-	uv run pytest .kilo/skills/cbs-statline-skill/tests/test_cbs_client_extended.py \
+	uv run pytest .kilo/skills/cbs-statline-skill/test_cbs_client.py \
 		.kilo/skills/data-viz-journalism/tests/test_journalism_style.py -v
 
-test-live: ## Run live API tests (requires network, ~60s)
-	uv run pytest .kilo/skills/cbs-statline-skill/tests/test_api_live.py \
-		-m "integration or e2e" --timeout=60 -v
+test-live: ## Run live CBS endpoint smoke tests (requires network)
+	uv run python scripts/test_live_endpoints.py
 
 clean: ## Remove virtual environment and cache files
 	rm -rf .venv
